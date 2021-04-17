@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Roboto:wght@300;400;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Roboto;
+}
+
+.main {
+    background-image: url('bg.svg');
+    background-position: bottom;
+    background-repeat: no-repeat;
+}
+
+#logo {
+    position: absolute;
+    width: 100px;
+    padding: 2% 2%;
+}
+
+.logo {
+    display: block;
+    width: 100px;
+    padding: 2% 2%;
+}
+
+.logo-end {
+    display: block;
+    width: 100px;
+    padding: 2% 2%;
+    margin: auto;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 40% 60%;
+}
+
+.intro {
+    text-align: center;
+}
+
+.CTA {
+    padding: 0.8rem 2rem;
+    margin: 1.5rem 0;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #fff;
+    border-radius: 10px;
+    background: #6c63ff;
+    font-family: Merriweather;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+    outline: none;
+    transition: all .2s ease-in-out;
+}
+
+.CTA:hover {
+    transform: scale(1.02);
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.intro-img img {
+    width: 80%;
+}
+
+.bg-1 {
+    padding: 1rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    background: #6c63ff;
+    color: white;
+}
+
+table {
+    margin-bottom: 5rem;
+    border-collapse: collapse;
+    width: 800px;
+    height: 200px;
+    border: 1px solid #bdc3c7;
+    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2), -1px -1px 8px rgba(0, 0, 0, 0.2);
+}
+
+tr {
+    transition: all .2s ease-in;
+    cursor: pointer;
+}
+
+th,
+tr button {
+    background: #6c63ff;
+    color: white;
+}
+
+th,
+td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+tr button {
+    padding: .5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    cursor: pointer;
+}
+
+tr button:hover {
+    transform: scale(1.02);
+    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2), -1px -1px 8px rgba(0, 0, 0, 0.2);
+}
+
+tr:hover {
+    background-color: #f5f5f5;
+    transform: scale(1.02);
+    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2), -1px -1px 8px rgba(0, 0, 0, 0.2);
+}
+
+span.info {
+    font-size: 16px;
+}
+
+h4.info-1 {
+    padding: 5px;
+    color: rgb(87, 87, 87);
+    font-size: 16px;
+}
+
+#amount {
+    padding: 0rem 0.4rem;
+    border-width: 1px;
+    border-style: solid;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    outline: none;
+    font-size: 16px;
+    max-width: 4rem;
+    color: rgb(87, 87, 87);
+}
+
+select {
+    padding: 0rem 0.4rem;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    font-size: 16px;
+    color: rgb(87, 87, 87);
+}
+
+@media only screen and (max-width: 768px) {
+    table {
+        width: 90%;
+    }
+}
